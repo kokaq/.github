@@ -1,4 +1,7 @@
 # kokaq
+<div>
+  <img height="300" src="../kokaq.png" alt="cute quokka as kokaq logo"/>
+</div>
 
 **kokaq** is a distributed, cloud-native priority queue implementation, designed to solve the long-standing gap of native priority handling in cloud messaging systems. It’s built for high availability, low latency, and intelligent resource allocation — empowering mission-critical workflows with dynamic, weight-based prioritization.
 
