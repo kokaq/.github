@@ -2,7 +2,7 @@
   <img height="300" src="../kokaqfull.png" alt="cute quokka as kokaq logo"/>
 </div>
 
-**kokaq** is a distributed, cloud-native priority queue implementation, designed to solve the long-standing gap of native priority handling in cloud messaging systems. It’s built for high availability, low latency, and intelligent resource allocation — empowering mission-critical workflows with dynamic, weight-based prioritization.
+`kokaq` is a distributed, cloud-native priority queue implementation, designed to solve the long-standing gap of native priority handling in cloud messaging systems. It’s built for high availability, low latency, and intelligent resource allocation — empowering mission-critical workflows with dynamic, weight-based prioritization.
 
 ---
 
@@ -34,9 +34,9 @@
 
 ---
 
-## 💡 Why kokaq?
+## 💡 Why `kokaq`?
 
-Cloud native message queue services don’t support real priority queues. kokaq introduces first-class support for prioritization, non-discrete weights, SLA-driven scheduling, and high-performance task routing — all without relying on multiple queues or consumer juggling.
+Cloud native message queue services don’t support real priority queues. `kokaq` introduces first-class support for prioritization, non-discrete weights, SLA-driven scheduling, and high-performance task routing — all without relying on multiple queues or consumer juggling.
 
 ---
 
@@ -73,11 +73,7 @@ Cloud native message queue services don’t support real priority queues. kokaq 
 
 ## 🤝 Join the Community
 
-kokaq is designed by engineers for engineers. Your feedback, feature ideas, and contributions are welcome!
-
-- Discussions: [GitHub Discussions](https://github.com/kokaq/kokaq/discussions)
-- Issues: [Track bugs & features](https://github.com/kokaq/kokaq/issues)
-- Contributing: See [CONTRIBUTING.md](CONTRIBUTING.md)
+`kokaq` is designed by engineers for engineers. Your feedback, feature ideas, and contributions are welcome!
 
 ---
 
