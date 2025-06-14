@@ -1,29 +1,25 @@
-<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-
-- [Contributing to `kokaq`](#contributing-to-kokaq)
-   * [📜 Ground Rules](#-ground-rules)
-      + [🎯 Follow Go Idioms and Best Practices](#-follow-go-idioms-and-best-practices)
-      + [🚨 Avoid Breaking Public APIs](#-avoid-breaking-public-apis)
-      + [📦 Minimize Dependencies](#-minimize-dependencies)
-      + [✅ Unit Tests Are Mandatory](#-unit-tests-are-mandatory)
-   * [🔧 Development Setup](#-development-setup)
-      + [🧰 Prerequisites for Development Setup](#-prerequisites-for-development-setup)
-      + [🚀 Getting Started](#-getting-started)
-         - [1. Clone all repositories into the same folder:](#1-clone-all-repositories-into-the-same-folder)
-         - [2. Initialize `go.work`](#2-initialize-gowork)
-      + [Debug Mode (Default Dev)](#debug-mode-default-dev)
-      + [Release Mode (CI / Production)](#release-mode-ci-production)
-   * [🧪 Testing & Coverage](#-testing-coverage)
-      + [Tips](#tips)
-   * [🔄 Creating a Pull Request](#-creating-a-pull-request)
-   * [🙋 Support & Questions](#-support-questions)
-
-<!-- TOC end -->
-
-<!-- TOC --><a name="contributing-to-kokaq"></a>
 # Contributing to `kokaq`
 
 First off, thank you for taking the time to contribute! 🎉  
+
+* [📜 Ground Rules](#-ground-rules)
+   + [🎯 Follow Go Idioms and Best Practices](#-follow-go-idioms-and-best-practices)
+   + [🚨 Avoid Breaking Public APIs](#-avoid-breaking-public-apis)
+   + [📦 Minimize Dependencies](#-minimize-dependencies)
+   + [✅ Unit Tests Are Mandatory](#-unit-tests-are-mandatory)
+* [🔧 Development Setup](#-development-setup)
+   + [🧰 Prerequisites for Development Setup](#-prerequisites-for-development-setup)
+   + [🚀 Getting Started](#-getting-started)
+      - [1. Clone all repositories into the same folder:](#1-clone-all-repositories-into-the-same-folder)
+      - [2. Initialize `go.work`](#2-initialize-gowork)
+   + [Debug Mode (Default Dev)](#debug-mode-default-dev)
+   + [Release Mode (CI / Production)](#release-mode-ci-production)
+* [🧪 Testing & Coverage](#-testing-coverage)
+   + [Tips](#tips)
+* [🔄 Creating a Pull Request](#-creating-a-pull-request)
+* [🙋 Support & Questions](#-support-questions)
+
+<!-- TOC end -->
 
 
 <!-- TOC --><a name="-ground-rules"></a>
@@ -251,3 +247,7 @@ git branch -d feat/scheduler-prioritization
 ## 🙌 Thank You!
 
 Your contributions help make `kokaq` a fast, flexible, and developer-first queuing platform.
+
+---
+
+> Generate TOC with https://github.com/derlin/bitdowntoc
