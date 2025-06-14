@@ -1,22 +1,37 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Contributing to `kokaq`](#contributing-to-kokaq)
+   * [📜 Ground Rules](#-ground-rules)
+      + [🎯 Follow Go Idioms and Best Practices](#-follow-go-idioms-and-best-practices)
+      + [🚨 Avoid Breaking Public APIs](#-avoid-breaking-public-apis)
+      + [📦 Minimize Dependencies](#-minimize-dependencies)
+      + [✅ Unit Tests Are Mandatory](#-unit-tests-are-mandatory)
+   * [🔧 Development Setup](#-development-setup)
+      + [🧰 Prerequisites for Development Setup](#-prerequisites-for-development-setup)
+      + [🚀 Getting Started](#-getting-started)
+         - [1. Clone all repositories into the same folder:](#1-clone-all-repositories-into-the-same-folder)
+         - [2. Initialize `go.work`](#2-initialize-gowork)
+      + [Debug Mode (Default Dev)](#debug-mode-default-dev)
+      + [Release Mode (CI / Production)](#release-mode-ci-production)
+   * [🧪 Testing & Coverage](#-testing-coverage)
+      + [Tips](#tips)
+   * [🔄 Creating a Pull Request](#-creating-a-pull-request)
+   * [🙋 Support & Questions](#-support-questions)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="contributing-to-kokaq"></a>
 # Contributing to `kokaq`
 
 First off, thank you for taking the time to contribute! 🎉  
 
 
+<!-- TOC --><a name="-ground-rules"></a>
 ## 📜 Ground Rules
 
 Before you start contributing to `kokaq`, please ensure you align with the following principles and practices. These guidelines are essential for maintaining the reliability, clarity, and long-term maintainability of the project.
 
-### ✅ Unit Tests Are Mandatory
-All new features and bug fixes must be accompanied by unit tests. This ensures:
-- Correctness of the code you’re introducing.
-- That regressions are caught early as the project evolves.
-- Clear intent for how the code should behave.
-
-> Use the standard testing package. Tests should be deterministic, fast, and self-contained (no reliance on external services or network).
-
-If you're contributing low-level core logic like scheduling or prioritization, you’re expected to include tests that verify edge cases and boundary conditions.
-
+<!-- TOC --><a name="-follow-go-idioms-and-best-practices"></a>
 ### 🎯 Follow Go Idioms and Best Practices
 Your code should feel familiar to any experienced Go developer. To achieve this:
 - Use idiomatic naming: `NewX` for constructors, `Do` for actions, etc.
@@ -26,6 +41,7 @@ Your code should feel familiar to any experienced Go developer. To achieve this:
 
 > A good rule of thumb: if you’re unsure whether a pattern is idiomatic in Go, check [Effective Go](https://golang.org/doc/effective_go.html) or existing code in the Go standard library.
 
+<!-- TOC --><a name="-avoid-breaking-public-apis"></a>
 ### 🚨 Avoid Breaking Public APIs
 Stability matters. The core library may be embedded into other systems, so any breaking change to exported functions, types, or behaviors must be:
 - Discussed in a GitHub Issue or Discussion beforehand.
@@ -34,6 +50,7 @@ Stability matters. The core library may be embedded into other systems, so any b
 
 Semantic versioning will be used to manage compatibility in tagged releases.
 
+<!-- TOC --><a name="-minimize-dependencies"></a>
 ### 📦 Minimize Dependencies
 `kokaq` modules are meant to be lightweight, embeddable, and safe for use in critical paths. That means:
 - Use only standard library packages whenever possible.
@@ -45,9 +62,22 @@ Semantic versioning will be used to manage compatibility in tagged releases.
 
 If you’re unsure whether to add a package, open a discussion first.
 
+<!-- TOC --><a name="-unit-tests-are-mandatory"></a>
+### ✅ Unit Tests Are Mandatory
+All new features and bug fixes must be accompanied by unit tests. This ensures:
+- Correctness of the code you’re introducing.
+- That regressions are caught early as the project evolves.
+- Clear intent for how the code should behave.
 
+> Use the standard testing package. Tests should be deterministic, fast, and self-contained (no reliance on external services or network).
+
+If you're contributing low-level core logic like scheduling or prioritization, you’re expected to include tests that verify edge cases and boundary conditions.
+
+
+<!-- TOC --><a name="-development-setup"></a>
 ## 🔧 Development Setup
 
+<!-- TOC --><a name="-prerequisites-for-development-setup"></a>
 ### 🧰 Prerequisites for Development Setup
 
 Before you start working on `kokaq`, ensure your development environment meets the following requirements:
@@ -75,8 +105,10 @@ This repo is part of a modular Go project containing multiple services and modul
 - `kokaq-client` provides official SDKs to interact with `kokaq` server via REST and gRPC.
   - depends on `kokaq-core`, `kokaq-protocol`
 
+<!-- TOC --><a name="-getting-started"></a>
 ### 🚀 Getting Started
 
+<!-- TOC --><a name="1-clone-all-repositories-into-the-same-folder"></a>
 #### 1. Clone all repositories into the same folder:
 
 ```bash
@@ -86,6 +118,7 @@ git clone https://github.com/kokaq/kokaq-protocol.git
 git clone https://github.com/kokaq/kokaq-server.git
 git clone https://github.com/kokaq/kokaq-client.git
 ```
+<!-- TOC --><a name="2-initialize-gowork"></a>
 #### 2. Initialize `go.work`
 
 ```bash
@@ -104,14 +137,17 @@ use (
 
 ```
 
+<!-- TOC --><a name="debug-mode-default-dev"></a>
 ### Debug Mode (Default Dev)
 Just use go.work. No replace needed. Modules will resolve locally.
 
+<!-- TOC --><a name="release-mode-ci-production"></a>
 ### Release Mode (CI / Production)
 You want to:
 - Use published Git tags like `github.com/kokaq/core/v1`
 - Remove or ignore go.work
 
+<!-- TOC --><a name="-testing-coverage"></a>
 ## 🧪 Testing & Coverage
 All logic must be covered by:
 
@@ -119,11 +155,13 @@ All logic must be covered by:
 - 🌀 Fuzzing for unmarshaling/serialization paths (if applicable)
 - 🏎️ Benchmarks for hot-path logic (e.g. schedulers)
 
+<!-- TOC --><a name="tips"></a>
 ### Tips
 > 
 > - Use `go test ./...` from any module.
 > - Modify code in `kokaq-core/`, and `kokaq-protocol` will pick up changes immediately.
 
+<!-- TOC --><a name="-creating-a-pull-request"></a>
 ## 🔄 Creating a Pull Request
 Follow these steps to contribute code to the kokaq-core repository:
 
@@ -200,6 +238,7 @@ git pull origin main
 git branch -d feat/scheduler-prioritization
 ```
 
+<!-- TOC --><a name="-support-questions"></a>
 ## 🙋 Support & Questions
 
 - For bugs or issues, open issues in the right repository:
