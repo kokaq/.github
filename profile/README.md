@@ -25,7 +25,7 @@
 
 ## 🤝 Join the Community
 
-`kokaq` is designed by engineers for engineers. Your feedback, feature ideas, and contributions are welcome!
+`kokaq` is designed by engineers for engineers. Your [feedback](https://github.com/kokaq/.github/tree/main/CONTRIBUTING#-support--questions), [ideas](https://github.com/orgs/kokaq/discussions), and [contributions](https://github.com/kokaq/.github/tree/main/CONTRIBUTING#contributing-to-kokaq) are welcome!
 
 ---
 
