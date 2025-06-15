@@ -30,12 +30,12 @@ Before you start working on `kokaq`, ensure your development environment meets t
 **📦 Go Environment Setup**
 
 These repos are part of a modular Go project containing multiple services and modules:
-- `kokaq-core` is the heart of `kokaq`. It provides the foundational logic and data structures for enabling true, weight-based prioritization across distributed systems.
-- `kokaq-protocol` contains the canonical tcp protocol definitions for kokaq server.
-- `kokaq-server` is the production server component of `kokaq`. It hosts APIs, integrates with backend storage, exposes metrics, and runs the scheduling/dispatch logic 
-  - depends on `kokaq-core`, `kokaq-protocol`
-- `kokaq-client` provides official SDKs to interact with `kokaq` server via REST and gRPC.
-  - depends on `kokaq-core`, `kokaq-protocol`
+- `core` is the heart of `kokaq`. It provides the foundational logic and data structures for enabling true, weight-based prioritization across distributed systems.
+- `protocol` contains the canonical tcp protocol definitions for kokaq server.
+- `server` is the production server component of `kokaq`. It hosts APIs, integrates with backend storage, exposes metrics, and runs the scheduling/dispatch logic 
+  - depends on `core`, `protocol`
+- `client` provides official SDKs to interact with `kokaq` server via REST and gRPC.
+  - depends on `core`, `protocol`
 
 <!-- TOC --><a name="-getting-started"></a>
 ### 🚀 Getting Started
@@ -45,16 +45,16 @@ These repos are part of a modular Go project containing multiple services and mo
 
 ```bash
 mkdir kokaq && cd kokaq
-git clone https://github.com/kokaq/kokaq-core.git
-git clone https://github.com/kokaq/kokaq-protocol.git
-git clone https://github.com/kokaq/kokaq-server.git
-git clone https://github.com/kokaq/kokaq-client.git
+git clone https://github.com/kokaq/core.git
+git clone https://github.com/kokaq/protocol.git
+git clone https://github.com/kokaq/server.git
+git clone https://github.com/kokaq/client.git
 ```
 <!-- TOC --><a name="2-initialize-gowork"></a>
 #### 2. Initialize `go.work`
 
 ```bash
-go work init ./kokaq-core ./kokaq-protocol
+go work init ./core ./protocol
 ```
 
 It will generate:
@@ -63,8 +63,10 @@ It will generate:
 go 1.21
 
 use (
-    ./kokaq-core
-    ./kokaq-protocol
+    ./core
+    ./protocol
+    ./server
+    ./client
 )
 
 ```

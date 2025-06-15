@@ -10,10 +10,10 @@ First off, thank you for taking the time to contribute! 🎉
 ## 🙋 Support & Questions
 
 - For bugs or issues, open issues in the right repository:
-  - [GitHub issue - `kokaq-core`](https://github.com/kokaq/kokaq-core/issues)
-  - [GitHub issue - `kokaq-protocol`](https://github.com/kokaq/kokaq-protocol/issues)
-  - [GitHub issue - `kokaq-server`](https://github.com/kokaq/kokaq-server/issues)
-  - [GitHub issue - `kokaq-client`](https://github.com/kokaq/kokaq-client/issues)
+  - [GitHub issue - `core`](https://github.com/kokaq/core/issues)
+  - [GitHub issue - `protocol`](https://github.com/kokaq/protocol/issues)
+  - [GitHub issue - `server`](https://github.com/kokaq/server/issues)
+  - [GitHub issue - `client`](https://github.com/kokaq/client/issues)
 - For design questions or roadmap discussion, open a [GitHub discussion](https://github.com/orgs/kokaq/discussions)
 
 ## 🙌 Thank You!

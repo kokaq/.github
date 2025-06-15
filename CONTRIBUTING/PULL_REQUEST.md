@@ -1,14 +1,14 @@
 <!-- TOC --><a name="-creating-a-pull-request"></a>
 # 🔄 Creating a Pull Request
-Follow these steps to contribute code to the kokaq-core repository:
+Follow these steps to contribute code to the core repository:
 
 1. Fork the Repository
 If you don’t have write access:
-- Click Fork on the top-right of kokaq-core.
+- Click Fork on the top-right of core.
 - Clone your fork:
 ```bash
-git clone https://github.com/your-username/kokaq-core.git
-cd kokaq-core
+git clone https://github.com/your-username/core.git
+cd core
 ```
 If you have write access, clone the repo directly and work off the `main` branch.
 
