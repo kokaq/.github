@@ -39,5 +39,3 @@ All new features and bug fixes must be accompanied by unit tests. This ensures:
 > Use the standard testing package. Tests should be deterministic, fast, and self-contained (no reliance on external services or network).
 
 If you're contributing low-level core logic like scheduling or prioritization, you’re expected to include tests that verify edge cases and boundary conditions.
-
-> Generate TOC with https://github.com/derlin/bitdowntoc
