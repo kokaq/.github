@@ -14,7 +14,7 @@ First off, thank you for taking the time to contribute! 🎉
   - [GitHub issue - `protocol`](https://github.com/kokaq/protocol/issues)
   - [GitHub issue - `server`](https://github.com/kokaq/server/issues)
   - [GitHub issue - `client`](https://github.com/kokaq/client/issues)
-- For design questions or roadmap discussion, open a [GitHub discussion](https://github.com/orgs/kokaq/discussions)
+- For design questions or roadmap discussion, open a [GitHub discussion](https://github.com/orgs/kokaq/discussions/new/choose)
 
 ## 🙌 Thank You!
 
