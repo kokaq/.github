@@ -63,3 +63,6 @@ git checkout main
 git pull origin main
 git branch -d feat/scheduler-prioritization
 ```
+
+> ### Next
+> [Releases](./RELEASE.md)

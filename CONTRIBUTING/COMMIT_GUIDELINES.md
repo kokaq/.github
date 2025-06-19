@@ -165,4 +165,6 @@ Conventional Commits directly map to SemVer release types:
 
 > Any commit with a `BREAKING CHANGE:` footer (regardless of type) signals a **major** version bump.
 
-> Generate TOC with https://github.com/derlin/bitdowntoc
+
+> ### Next
+> [Create a pull request](./PULL_REQUEST.md)

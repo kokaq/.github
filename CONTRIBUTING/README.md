@@ -5,6 +5,7 @@ First off, thank you for taking the time to contribute! 🎉
 1. [Rules of Contribution](RULES.md)
 1. [Development Environment Setup](SETUP.md)
 1. [Commit Guidelines](COMMIT_GUIDELINES.md)
+1. [Create a pull request](PULL_REQUEST.md)
 1. [Releases](RELEASE.md)
 
 ## 🙋 Support & Questions

@@ -81,4 +81,5 @@ You want to:
 - Use published Git tags like `github.com/kokaq/core/v1`
 - Remove or ignore go.work
 
-> Generate TOC with https://github.com/derlin/bitdowntoc
+> ### Next
+> [Commit Guidelines](./COMMIT_GUIDELINES.md)
