@@ -49,12 +49,13 @@ git clone https://github.com/kokaq/core.git
 git clone https://github.com/kokaq/protocol.git
 git clone https://github.com/kokaq/server.git
 git clone https://github.com/kokaq/client.git
+git clone https://github.com/kokaq/repl.git
 ```
 <!-- TOC --><a name="2-initialize-gowork"></a>
 #### 2. Initialize `go.work`
 
 ```bash
-go work init ./core ./protocol
+go work init ./core ./protocol ./server ./client ./repl
 ```
 
 It will generate:
@@ -67,6 +68,7 @@ use (
     ./protocol
     ./server
     ./client
+    ./repl
 )
 
 ```
